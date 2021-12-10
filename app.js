@@ -74,8 +74,8 @@ const createEmployee = () => {
         }
       ])
       .then(manager1 => {
-        const personManager = new Manager(answers.name, answers.id, answers.email, manager1.officeNumber)
-        teamMembers.push(personManager)
+        const newManager = new Manager(answers.name, answers.id, answers.email, manager1.officeNumber)
+        teamMembers.push(newManager)
         console.log(teamMembers)
         add()
       })
@@ -88,8 +88,8 @@ const createEmployee = () => {
         }
       ])
       .then(engineer1 => {
-        const personEngineer = new Engineer(answers.name, answers.id, answers.email, engineer1.github)
-        teamMembers.push(personEngineer) 
+        const newEngineer = new Engineer(answers.name, answers.id, answers.email, engineer1.github)
+        teamMembers.push(newEngineer) 
         console.log(teamMembers)
         add()
         })
@@ -102,8 +102,8 @@ const createEmployee = () => {
         }
       ])
       .then(intern1 => {
-          const personIntern = new Intern(answers.name, answers.id, answers.email, intern1.school)
-          teamMembers.push(personIntern)
+          const newIntern = new Intern(answers.name, answers.id, answers.email, intern1.school)
+          teamMembers.push(newIntern)
         console.log(teamMembers)
         add()
         
