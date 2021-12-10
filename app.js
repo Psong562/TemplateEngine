@@ -30,7 +30,7 @@ const add = () => {
       createEmployee()
     } else {
       console.log("making team.html");
-      fs.writeFile(`team.html`, render(teamMembers), err => {
+      fs.writeFile(`./output/team.html`, render(teamMembers), err => {
         if (err) console.log(err);
       
     });
