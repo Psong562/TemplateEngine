@@ -29,8 +29,12 @@ const add = () => {
     if (data.add == true) {
       createEmployee()
     } else {
-      render()
-    }
+      console.log("making team.html");
+      fs.writeFile(`team.html`, render(teamMembers), err => {
+        if (err) console.log(err);
+      
+    });
+  }
   })
 }
 
