@@ -29,7 +29,7 @@ const add = () => {
     if (data.add == true) {
       createEmployee()
     } else {
-      console.log("making team.html");
+      console.log("Your team has been created");
       fs.writeFile(`./output/team.html`, render(teamMembers), err => {
         if (err) console.log(err);
       
